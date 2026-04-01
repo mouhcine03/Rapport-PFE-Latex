@@ -1,0 +1,87 @@
+\newgeometry{left=4.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm}
+\begin{titlepage}
+
+
+% --- Define Colors ---
+\definecolor{primaryColor}{HTML}{003366} % Deep Blue
+\definecolor{secondaryColor}{HTML}{FF9900} % Accent Orange/Gold
+\definecolor{lightGrayBG}{HTML}{F8F9FA} % Light background for the title box
+
+% --- TikZ Background Designs ---
+\begin{tikzpicture}[remember picture,overlay]
+    % Left Blue Sidebar
+    \fill[primaryColor] (current page.north west) rectangle ([xshift=3.5cm]current page.south west);
+    
+    % Secondary Color accent bar next to sidebar
+    \fill[secondaryColor] ([xshift=3.5cm]current page.north west) rectangle ([xshift=3.7cm]current page.south west);
+    
+\end{tikzpicture}
+
+% --- Custom geometry moved outside ---
+
+\centering
+
+% --- Logos Section ---
+\vspace*{-0.5cm} 
+\begin{minipage}[t]{0.4\textwidth}
+    \centering
+    \includegraphics[width=0.75\textwidth]{Ensa-logo.png} 
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.4\textwidth}
+    \centering
+    \includegraphics[width=0.75\textwidth]{beebaydigital_logo.jpg}
+\end{minipage}
+
+\vspace{0.8cm}
+
+% --- Institution Name ---
+{\large \textcolor{primaryColor}{\textbf{UNIVERSITÉ IBN TOFAIL}}}\\[0.1cm]
+{\large \textbf{ÉCOLE NATIONALE DES SCIENCES APPLIQUÉES DE KÉNITRA}}\\[0.2cm]
+{\small \textbf{Département : Intelligence Artificielle et Génie Informatique}}\\[0.8cm]
+
+% --- Main Title Box ---
+\begin{tikzpicture}
+    \node[anchor=center, fill=lightGrayBG, inner sep=12pt, rounded corners=8pt, draw=primaryColor, line width=1.2pt, text width=0.8\textwidth, align=center] {
+        {\LARGE \textcolor{primaryColor}{\textbf{MÉMOIRE DE PROJET DE FIN D’ÉTUDES}}} \\[0.3cm]
+        {\large Présenté en vue de l’obtention du titre} \\[0.1cm]
+        {\Large \textbf{D’INGÉNIEUR D’ÉTAT}}
+    };
+\end{tikzpicture}
+
+\vspace{0.8cm}
+
+% --- Subject/Title ---
+{\large \textit{Sujet :}}\\[0.3cm]
+{\huge \textbf{\textcolor{primaryColor}{Implémentation d’une solution d’intégration entre Boomi et Infor pour automatiser la gestion des work orders}}}\\[1cm]
+
+% --- Student & Company Info ---
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{flushleft}
+        {\large \textbf{Réalisé par :}}\\[0.1cm]
+        {\Large \textbf{Mouhcine EL HASNAOUI}}
+    \end{flushleft}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{flushright}
+        {\large \textbf{Société d’Accueil :}}\\[0.1cm]
+        {\Large \textbf{\textcolor{secondaryColor}{We are beebay}}}
+    \end{flushright}
+\end{minipage}
+
+\vfill
+
+% --- Jury Section ---
+\begin{minipage}{\textwidth}
+    \centering
+    {\small \textbf{Soutenu le : 07/02/2024 devant le jury composé de :}}\\[0.4cm]
+    \begin{tabular}{p{4.5cm} p{6cm} l}
+        \textbf{M. NOUH Said} & Prof. à l’ENSAM de Casablanca & \textit{Président} \\
+        \textbf{Mme RASSAA Oumaima} & Consultante Data Intégration & \textit{Parrain de stage} \\
+        \textbf{M. BAHASSINE Said} & Prof. à l’ENSAM de Casablanca & \textit{Examinateur} \\
+    \end{tabular}
+\end{minipage}
+
+\end{titlepage}
+\restoregeometry

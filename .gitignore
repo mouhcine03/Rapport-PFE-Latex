@@ -1,0 +1,20 @@
+# Fichiers temporaires LaTeX
+*.aux
+*.log
+*.toc
+*.out
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.pdf
+
+# Bibliographie
+*.bbl
+*.blg
+
+# Divers
+*.nav
+*.snm
+*.vrb

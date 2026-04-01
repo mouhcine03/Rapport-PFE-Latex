@@ -1,0 +1,43 @@
+\documentclass[a4paper,12pt]{report}
+
+% Packages
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{xcolor}
+
+\geometry{margin=2.5cm}
+\graphicspath{{images/}}
+
+\begin{document}
+
+% Page de garde
+\input{front/page_garde}
+
+% Numérotation romaine
+\pagenumbering{roman}
+
+% Table des matières
+\tableofcontents
+\clearpage
+
+% Liste des figures
+\listoffigures
+\clearpage
+
+% Numérotation normale
+\pagenumbering{arabic}
+
+% Chapitres
+\include{chapters/Dedicace}
+\include{chapters/Remerciements}
+\include{chapters/Abstract}
+\include{chapters/Resume}
+\include{chapters/introduction}
+\include{chapters/conclusion}
+
+\end{document}
