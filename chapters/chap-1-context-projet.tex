@@ -1,0 +1,86 @@
+\chapter{Contexte du Projet et État de l'Art}
+% ============================================================
+ 
+\section{Présentation de l'organisme d'accueil}
+ 
+\subsection{Présentation Générale}
+\textbf{We Are Beebay} est un cabinet de conseil et de services spécialisé dans les systèmes informatiques et l'intégration de données. Reconnue pour son expertise en Data Intégration et son partenariat stratégique avec Boomi, leader du marché IPaaS, Beebay se distingue par son excellence technique et la compétence de ses professionnels hautement qualifiés.
+ 
+L'entreprise accompagne ses clients dans la réussite de leurs projets IT stratégiques, en couvrant divers domaines d'intervention tels que la stratégie IT, l'intégration de données, l'architecture technique et le cloud. Grâce à des partenariats clés avec Azure, AWS et GCP, Beebay offre des solutions complètes et adaptées aux besoins spécifiques de chaque client, assurant ainsi leur succès dans un environnement technologique en constante évolution.
+ 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{headquartes.png}
+    \caption{Présentation de We are beebay}
+\end{figure}
+ 
+\subsection{Secteur d'activité}
+Avec une vision internationale affirmée, We Are Beebay s'appuie sur deux bureaux stratégiquement situés : à Casablanca, le pôle économique du Maroc, et à Paris, un hub central des affaires en Europe. Cette implantation permet une proximité optimale avec leurs clients locaux tout en favorisant une collaboration internationale. Ainsi, We Are Beebay démontre sa capacité à combiner expertise locale et perspective globale dans le secteur des technologies de l'information.
+ 
+We Are Beebay mobilise son savoir-faire et l'expertise technique de ses équipes pour piloter :
+ 
+\begin{itemize}
+    \item \textbf{Stratégie IT :} Développement de plans informatiques stratégiques alignés sur les objectifs d'affaires.
+    \item \textbf{Data Integration :} Solutions d'intégration de données incluant IPaaS, middleware et ETL, pour une gestion fluide des données.
+    \item \textbf{Architecture :} Conception d'architectures techniques et applicatives robustes et évolutives.
+    \item \textbf{Cloud :} Expertise dans les services cloud de Azure, AWS et GCP pour une infrastructure flexible et performante.
+\end{itemize}
+ 
+\subsection{L'organigramme de la société}
+L'organigramme de l'équipe de Beebay permet de mettre en avant les talents qui forment le cœur de l'entreprise. L'équipe diversifiée est composée de professionnels passionnés, chacun apportant une expertise unique qui enrichit la qualité des services. Ensemble, ils incarnent les valeurs fondamentales de Beebay : l'engagement, l'excellence, la rigueur, l'innovation et la diversité. En travaillant en synergie, ils fournissent continuellement des solutions innovantes démontrant leur capacité à répondre aux défis les plus complexes et à assurer la satisfaction des clients.
+ 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{organigrame.png}
+    \caption{Organigramme de We Are Beebay}
+\end{figure}
+ 
+\subsection{Palette technologique}
+We are Beebay s'appuie sur des technologies de pointe pour proposer à ses clients des solutions robustes et évolutives, répondant efficacement aux enjeux de la transformation digitale. Son expertise couvre l'intégration de données, l'automatisation, la gestion des API ainsi que les services Cloud, le tout en s'appuyant sur des partenariats avec des acteurs technologiques de premier plan.
+ 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{technologies.png}
+    \caption{Technologies utilisées par We Are Beebay}
+\end{figure}
+ 
+% ─────────────────────────────────────────────────────────────
+% SECTION 1.5 : Domaines d'expertises — 4 cartes même taille
+% ─────────────────────────────────────────────────────────────
+\subsection{Domaines d'expertises}
+L'entreprise apporte du conseil et de l'accompagnement à ses clients de toutes tailles,
+reposant à la fois sur un savoir-faire multidisciplinaire couvrant quatre grands domaines :
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{Saas-exeprtise.png}\\[0.3cm]
+    \includegraphics[width=1\textwidth]{data-integration-expertise.png}\\[0.3cm]
+    \includegraphics[width=1\textwidth]{Ai-expertise.png}
+    \caption{Domaines d'expertises de We Are Beebay}
+\end{figure}
+ 
+\vspace{0.6cm}
+ 
+% ── Un seul tcbraster pour les 4 cartes : hauteur uniforme ──
+\tcbset{
+  cartestyle/.style={colback=red!5!white, colframe=red!75!black, width=0.45\textwidth}
+}
+\begin{tcbraster}[
+  raster columns=2,
+  raster equal height=rows,   % même hauteur pour toutes les lignes
+  raster column skip=0.05\textwidth,
+  raster row skip=0.5cm,
+]
+ 
+ 
+\end{tcbraster}
+\vspace{0.6cm}
+ 
+\section{Étude de l'existant et Problématique}
+Actuellement, le traitement des factures proforma est une tâche manuelle, chronophage et sujette aux erreurs de saisie. La problématique principale est de savoir comment automatiser l'extraction de ces données tout en garantissant un processus de validation robuste.
+ 
+\section{État de l'art technologique}
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!75!black, title=Choix de l'OCR]
+   Après une étude comparative, le choix s'est porté sur un moteur OCR performant pour sa capacité à gérer des documents non structurés avec une haute précision et faciliter l'extraction des données clés.
+\end{tcolorbox}
+ 
+% =======================
